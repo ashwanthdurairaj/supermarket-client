@@ -27,8 +27,8 @@ function Login() {
     }
 
     if (isSuccess || user) {
-      // navigate('/')
-      console.log('ok')
+      navigate('/')
+      // console.log('ok')
     }
 
     dispatch(reset())
