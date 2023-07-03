@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // const API_URL = '/api/goals/'
-const API_URL = 'https://supermarket-api.vercel.app/api/goals'
+const API_URL = 'https://supermarket-api-a8az.vercel.app/api/goals'
 // Create new goal
 const createGoal = async (goalData, token) => {
   const config = {
@@ -60,7 +60,7 @@ const billing = async (data, token) => {
     },
   }
 
-  const response = await axios.put('https://supermarket-client.vercel.app/api/billing', data, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/billing', data, config);
   console.log(response)
   console.log(response.data)
   console.log('billing response')
@@ -74,7 +74,7 @@ const sortQuantity = async (userId, token) => {
     },
   }
   console.log(token, userId)
-  const response = await axios.put('https://supermarket-client.vercel.app/api/sortQuantity', userId, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/sortQuantity', userId, config);
   return response.data
 }
 
@@ -85,7 +85,7 @@ const sortSales = async (userId, token) => {
     },
   }
   console.log(token)
-  const response = await axios.put('https://supermarket-client.vercel.app/api/sortSales', userId, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/sortSales', userId, config);
   return response.data
 }
 
@@ -96,7 +96,7 @@ const search = async (data, token) => {
     },
   }
   console.log(token)
-  const response = await axios.put('https://supermarket-client.vercel.app/api/search', data, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/search', data, config);
   return response.data
   
 }
@@ -108,7 +108,7 @@ const clear = async (userId, token) => {
     },
   }
   console.log(token)
-  const response = await axios.put('https://supermarket-client.vercel.app/api/clear', userId, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/clear', userId, config);
   return response.data
 }
 
@@ -119,7 +119,7 @@ const applyDiscount = async (userId, token) => {
     },
   }
   console.log(token)
-  const response = await axios.put('https://supermarket-client.vercel.app/api/applyDiscount', userId, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/applyDiscount', userId, config);
   return response.data
 }
 
@@ -130,7 +130,7 @@ const revokeDiscount = async (userId, token) => {
     },
   }
   console.log(token)
-  const response = await axios.put('https://supermarket-client.vercel.app/api/revokeDiscount', userId, config);
+  const response = await axios.put('https://supermarket-api-a8az.vercel.app/api/revokeDiscount', userId, config);
   return response.data
 }
 
